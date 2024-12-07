@@ -14,48 +14,6 @@
 /**
  Do not return anything, modify nums1 in-place instead.
  */
-// function merge(nums1: number[], m: number, nums2: number[], n: number): void {
-//   const finLength = m + n;
-//   let counter = 0;
-//   let x = 0; // m
-//   let y = 0; // n
-//   while (x < finLength) {
-//     if (y > n - 1) break;
-//     if (nums1[x] < nums2[y] && x < finLength) {
-//       if (x >= m) {
-//         nums1.splice(x, 0, nums2[y]);
-//         nums1.pop();
-//         x = 0;
-//         y++;
-//         counter++;
-//         continue;
-//       }
-//       x++;
-//       continue;
-//     }
-//     console.log(`insert no. : ${counter}`);
-//     console.log(`nums2[y]: ${nums2[y]}`);
-//     console.log(`nums1[x]: ${nums1[x]}`);
-//     console.log(`x: ${x}`);
-//     console.log(`y: ${y}`);
-//     console.log(`nums1: ${nums1}`);
-//     console.log(`nums2: ${nums2}`);
-//     console.log();
-//     nums1.splice(x, 0, nums2[y]);
-//     nums1.pop();
-//     x = 0;
-//     y++;
-//     counter++;
-//     console.log(`nums2[y]: ${nums2[y]}`);
-//     console.log(`nums1[x]: ${nums1[x]}`);
-//     console.log(`x: ${x}`);
-//     console.log(`y: ${y}`);
-//     console.log(`nums1: ${nums1}`);
-//     console.log(`nums2: ${nums2}`);
-//     console.log();
-//   }
-//   console.log(nums1);
-// }
 function merge(nums1, m, nums2, n) {
     var x = m - 1;
     var y = n - 1;
@@ -76,7 +34,6 @@ function merge(nums1, m, nums2, n) {
         y--;
         i--;
     }
-    console.log(nums1);
 }
 // Example 0:
 // Input: nums1 = [-1,0,0,3,3,3,0,0,0], m = 6, nums2 = [1,2,2], n = 3
