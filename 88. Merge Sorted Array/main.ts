@@ -43,6 +43,7 @@ function merge(nums1: number[], m: number, nums2: number[], n: number): void {
   }
 }
 
+console.log("test from feature 2");
 console.log("test from feature 1");
 
 // Example 0:
