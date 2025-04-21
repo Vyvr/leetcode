@@ -43,6 +43,7 @@ function merge(nums1: number[], m: number, nums2: number[], n: number): void {
   }
 }
 
+console.log("test from feature 2");
 // Example 0:
 // Input: nums1 = [-1,0,0,3,3,3,0,0,0], m = 6, nums2 = [1,2,2], n = 3
 // Output: [-1,0,0,1,2,2,3,3,3]
